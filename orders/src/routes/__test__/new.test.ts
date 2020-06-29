@@ -5,10 +5,10 @@ import { Ticket } from '../../models/ticket';
 import { Order, OrderStatus } from '../../models/order';
 import { natsWrapper } from '../../nats-wrapper';
 
-const id = '5ef48a603710de00235b8eb0';
+const id = mongoose.Types.ObjectId().toHexString();
 
 it('returns an error if the ticket does not exist', async () => {
-   const ticketId = mongoose.Types.ObjectId();
+   const ticketId = mongoose.Types.ObjectId().toHexString();
 
    await request(app)
       .post('/api/orders')

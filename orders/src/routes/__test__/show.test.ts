@@ -1,8 +1,9 @@
 import request from 'supertest';
 import { app } from '../../app';
 import { Ticket } from '../../models/ticket';
+import mongoose from 'mongoose';
 
-const id = '5ef48a603710de00235b8eb0';
+const id = mongoose.Types.ObjectId().toHexString();
 
 it('fetchs the order', async () => {
    // Create a ticket
