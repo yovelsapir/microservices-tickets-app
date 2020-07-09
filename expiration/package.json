@@ -19,7 +19,7 @@
    "license": "ISC",
    "dependencies": {
       "@types/bull": "^3.14.0",
-      "@yovelsapir_sgtickets/common": "^1.0.21",
+      "@yovelsapir_sgtickets/common": "^1.0.23",
       "bull": "^3.14.0",
       "node-nats-streaming": "^0.3.2",
       "ts-node-dev": "^1.0.0-pre.44",

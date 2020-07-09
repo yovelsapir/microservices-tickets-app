@@ -1,3 +1,1 @@
-export enum GueueGroupNames {
-   OrdersService = 'orders-service',
-}
+export const queueGroupName = 'orders-service';

@@ -4,12 +4,12 @@ import {
    TicketUpdatedEvent,
    Subjects,
 } from '@yovelsapir_sgtickets/common';
-import { GueueGroupNames } from './queueGroupName';
+import { queueGroupName } from './queueGroupName';
 import { Ticket } from '../../models/ticket';
 
 export class TicketUpdatedListener extends Listener<TicketUpdatedEvent> {
    readonly subject = Subjects.TicketUpdated;
-   queueGroupName = GueueGroupNames.OrdersService;
+   queueGroupName = queueGroupName;
    async onMessage(data: TicketUpdatedEvent['data'], msg: Message) {
       const ticket = await Ticket.findByEvent(data);
 
