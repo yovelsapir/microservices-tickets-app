@@ -1,6 +1,6 @@
 name: test-orders
 on: 
-  pull_request:
+  pull_request
 
 jobs:
   build:
